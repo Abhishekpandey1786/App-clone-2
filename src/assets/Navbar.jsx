@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { NavLink } from "react-router-dom";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -34,9 +34,13 @@ const Navbar = () => {
 
       {/* Right: Nav links */}
       <div className="hidden sm:flex items-center space-x-8">
+      <NavLink to="booking">
+      
         <a href="#" className="flex items-center text-gray-700 hover:text-orange-500 text-base">
           <span className="mr-1">⭑</span> Offers
         </a>
+      </NavLink>
+      
         <a href="#" className="flex items-center text-gray-700 hover:text-orange-500 text-base">
           <span className="mr-1">👜</span> Business
           <svg className="w-3 h-3 ml-1" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
